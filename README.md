@@ -1,5 +1,5 @@
 # What's the weather?
 
-![](https://i.gifer.com/8HUy.gif)
+![](https://media.giphy.com/media/hWvk9iUU4uBBeyBq0k/giphy.gif)
 
 A weather app that shows the current weather anywhere on earth
