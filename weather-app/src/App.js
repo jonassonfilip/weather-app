@@ -9,11 +9,37 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <h1>Nu kör vi!</h1>
-        
+
+      <div className='container'>
+
+      <header className="header">
+
+        <div className='city'>
+          <h1>Gothenburg</h1>
+          <h3>Sweden</h3>
+        </div>
+        <div className='temprature'>
+          <p>19°C</p>
+        </div>
+        <div className='description'>
+          <p>Clouds</p>
+        </div>
+
       </header>
+
+      <footer className='footer'>
+
+        <div className='feels'>
+        <p>19°C</p>
+        </div>
+
+        <div className='wind'>
+        <p>8 MPH</p>
+        </div>
+
+      </footer>
+
+      </div>
     </div>
   );
 }
