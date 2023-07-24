@@ -38,14 +38,14 @@ function App() {
       <header className="header">
 
         <div className='city'>
-          <h1>Gothenburg</h1>
-          <h3>Sweden</h3>
+          <h1>{data.name}</h1>
+          <h3>{data.sys.country}</h3>
         </div>
         <div className='temprature'>
-          <p>19°C</p>
+          <p>{data.main.temp}°C</p>
         </div>
         <div className='description'>
-          <p>Clouds</p>
+          <p>{data.weather[0].description}</p>
         </div>
 
       </header>
@@ -54,12 +54,12 @@ function App() {
 
         <div className='feels'>
           <h4>Feels like</h4>
-        <p>19°C</p>
+        <p>{data.main.feels_like}°C</p>
         </div>
 
         <div className='wind'>
         <h4>Wind</h4>
-        <p>8 MPH</p>
+        <p>{data.wind.speed} MPH</p>
         </div>
 
       </footer>
