@@ -5,10 +5,33 @@ import { useState } from 'react';
 
 function App() {
 
-/*   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=stockholm&appid=e037dda92e15438d349856b12b15468d` */
+  const [data, setData] = useState({});
+  const [location, setLocation] = useState('');
+
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=e037dda92e15438d349856b12b15468d`;
+
+  const search = (event) => {
+    if (event.key === 'Enter') {
+      axios.get(apiUrl).then((response) => {
+        setData(response.data)
+      })
+    }
+  }
 
   return (
     <div className="App">
+
+      <div className='searchField'>
+        <input
+        type='text'
+        placeholder="Search location"
+        value={location}
+        onChange={event => setLocation(event.target.value)}
+        onKeyPress={search}
+        />
+
+        
+      </div>
 
       <div className='container'>
 
@@ -30,10 +53,12 @@ function App() {
       <footer className='footer'>
 
         <div className='feels'>
+          <h4>Feels like</h4>
         <p>19°C</p>
         </div>
 
         <div className='wind'>
+        <h4>Wind</h4>
         <p>8 MPH</p>
         </div>
 
