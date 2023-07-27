@@ -1,6 +1,6 @@
-.App {
+/* .App {
   
-}
+} */
 
 .searchField {
   display: flex;
@@ -10,7 +10,6 @@
 }
 
 .container {
-  max-width: 28rem;
   height: auto;
   margin: auto;
   padding: 1rem;
@@ -38,6 +37,25 @@ footer {
   background-color: rgba(222, 246, 202, 0.6);
   border-radius: 4rem;
   margin: 1rem 0 1rem 0;
+  max-width: 28rem;
+}
+
+.city {
+  text-align: center;
+  background-color: rgba(222, 246, 202, 0.6);
+  padding: 1rem;
+  border-radius: 4rem;
+  
+}
+
+.headerCity {
+  font-size: 3rem;
+  margin: auto;
+}
+
+.headerCountry {
+  font-size: 1.5rem;
+  margin: auto;
 }
 
 .footerH {

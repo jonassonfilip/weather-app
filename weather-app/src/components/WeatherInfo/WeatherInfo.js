@@ -4,8 +4,8 @@ const WeatherInfo = ({ data, capitalizeFirstLetter }) => {
   return (
     <header className="header">
       <div className='city'>
-        <h1>{data.name}</h1>
-        {data.main ? <h3>{data.sys.country}</h3> : null}
+        <h1 className='headerCity'>{data.name}</h1>
+        {data.main ? <h3 className='headerCountry'>{data.sys.country}</h3> : null}
       </div>
 
       <div className='temprature'>
