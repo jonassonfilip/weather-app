@@ -1,7 +1,22 @@
 .App {
-  text-align: center;
+  
 }
 
 .searchField {
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+input {
+  width: 12rem;
+  height: 4rem;
+  text-align: center;
+  border-radius: 2rem;
+  border: none;
+  margin-top: 1rem;
+  background-color: blanchedalmond;
+  font-family: 'Quicksand', Helvetica, sans-serif;
+  font-size: 1rem;
 }

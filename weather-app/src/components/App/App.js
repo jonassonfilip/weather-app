@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useState } from 'react';
 import WeatherInfo from '../WeatherInfo/WeatherInfo';
 import WeatherFooter from '../Footer/Footer';
-/* import './App.css'; */
+import './App.css';
 
 function App() {
   function capitalizeFirstLetter(string) {

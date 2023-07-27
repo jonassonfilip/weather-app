@@ -9,7 +9,7 @@ const WeatherInfo = ({ data, capitalizeFirstLetter }) => {
       </div>
 
       <div className='temprature'>
-        {data.main ? <p>{data.main.temp}°C</p> : null}
+        {data.main ? <p>{data.main.temp.toFixed(1)}°C</p> : null}
       </div>
 
       <div className='description'>

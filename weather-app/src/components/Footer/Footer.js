@@ -6,12 +6,12 @@ const WeatherFooter = ({ data }) => {
     <footer>
       <div className='feels'>
         <h4>Feels like</h4>
-        {data.main ? <p>{data.main.feels_like}°C</p> : null}
+        {data.main ? <p>{data.main.feels_like.toFixed(1)}°C</p> : null}
       </div>
 
       <div className='wind'>
         <h4>Wind</h4>
-        {data.main ? <p>{data.wind.speed} MPS</p> : null}
+        {data.main ? <p>{data.wind.speed.toFixed(1)} MPS</p> : null}
       </div>
     </footer>
   );
