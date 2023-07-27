@@ -9,6 +9,13 @@
   text-align: center;
 }
 
+.container {
+  max-width: 44rem;
+  height: auto;
+  margin: auto;
+  padding: 1rem;
+}
+
 input {
   width: 12rem;
   height: 4rem;
@@ -19,4 +26,14 @@ input {
   background-color: blanchedalmond;
   font-family: 'Quicksand', Helvetica, sans-serif;
   font-size: 1rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-align: center;
+  justify-content: space-around;
+  background-color: aquamarine;
 }
