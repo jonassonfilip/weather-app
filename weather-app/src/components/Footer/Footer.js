@@ -1,6 +1,7 @@
 import React from 'react';
 
 const WeatherFooter = ({ data }) => {
+  if (data.name !== undefined)
   return (
     <footer>
       <div className='feels'>
