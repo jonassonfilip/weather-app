@@ -23,7 +23,7 @@ function App() {
         setError('');
       })
       .catch((error) => {
-        setError(`${location} is not a place that we know of...`);
+        setError(`${location} is not a place that we know of. Please try again!`);
         });
     }
   };
