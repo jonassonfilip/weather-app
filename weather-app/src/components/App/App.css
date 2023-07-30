@@ -94,3 +94,11 @@ footer {
 .wind {
   padding: 1rem 0 1rem 0;
 }
+
+.error {
+  margin: 1rem 0 1rem 0;
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}

@@ -12,6 +12,7 @@ function App() {
 
   const [data, setData] = useState({});
   const [location, setLocation] = useState('');
+  const [error, setError] = useState('');
 
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=e037dda92e15438d349856b12b15468d`;
 
@@ -19,7 +20,11 @@ function App() {
     if (event.key === 'Enter') {
       axios.get(apiUrl).then((response) => {
         setData(response.data);
-      });
+        setError('');
+      })
+      .catch((error) => {
+        setError(`${location} is not a place that we know of...`);
+        });
     }
   };
 
@@ -33,6 +38,9 @@ function App() {
           onChange={event => setLocation(event.target.value)}
           onKeyPress={search}
         />
+      </div>
+      <div className='error'>
+      {error && <p>{error}</p>}
       </div>
 
       <div className='container'>
