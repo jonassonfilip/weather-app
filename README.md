@@ -23,3 +23,8 @@ Start the development server with:
 ```
 npm start
 ```
+
+## Contribution
+Feel free to contribute and create issues. Before you make a pull request; make sure there's no errors in the code.
+<br>
+Have a nice day! :)
