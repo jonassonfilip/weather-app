@@ -28,3 +28,6 @@ npm start
 Feel free to contribute and create issues. Before you make a pull request; make sure there's no errors in the code.
 <br>
 Have a nice day! :)
+
+## Original site
+filipsweatherapp.netlify.com
