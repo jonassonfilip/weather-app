@@ -30,4 +30,4 @@ Feel free to contribute and create issues. Before you make a pull request; make 
 Have a nice day! :)
 
 ## Original site
-<a href="filipsweatherapp.netlify.com">
+<a href="https://filipsweatherapp.netlify.com" target="_blank">Click here</a>
