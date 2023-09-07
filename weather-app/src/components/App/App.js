@@ -16,7 +16,9 @@ function App() {
   const [location, setLocation] = useState('');
   const [error, setError] = useState('');
 
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=e037dda92e15438d349856b12b15468d`;
+  const apiKey = process.env.REACT_APP_API_KEY;
+
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${apiKey}`;
 
   // When you press enter axios will fetch the data from the api for the location written. If the locations isn't found, the error message appears.
   const search = (event) => {
