@@ -33,12 +33,12 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  padding: 1rem;
+  padding: 2.5rem;
   text-align: center;
   background-color: rgba(13, 30, 0, 0.4);
   border-radius: 4rem;
   margin: 4rem 0 1rem 0;
-  width: 28rem;
+  min-width: 28rem;
 }
 
 p {
@@ -55,7 +55,7 @@ footer {
   background-color: rgba(13, 30, 0, 0.4);
   border-radius: 4rem;
   margin: 1rem 0 1rem 0;
-  width: 28rem;
+  min-width: 28rem;
 }
 
 .headerCity {
